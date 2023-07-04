@@ -2477,9 +2477,6 @@ menu-drawer + .header__search {
 .header > .header__search {
   grid-area: left-icons;
   justify-self: start;
-  border-style: solid;
-  border-width: 2px;
-  border-color: red;
 }
 
 .header--top-center.drawer-menu > .header__search {
