@@ -2203,10 +2203,11 @@ product-info .loading-overlay:not(.hidden) ~ *,
 }
 
 .announcement-bar__message {
-  text-align: center;
+  text-align: left;
   padding: 1rem 0;
   margin: 0;
   letter-spacing: 0.1rem;
+  width: var(--page-width)
 }
 
 /* section-header */
