@@ -197,15 +197,29 @@
                 }}
               </div>
             {%- else -%}
+<<<<<<< HEAD
               <img
               src="{{section.settings.image-logo | img_url : 'medium'}}"
               >
+=======
+              <span class="h2">{{ shop.name }}</span>
+>>>>>>> 30403327f49003fa6640f121ec39ddd25d88620a
             {%- endif -%}
           </a>
       {%- if request.page_type == 'index' -%}
         </h1>
       {%- endif -%}
     {%- endif -%}
+
+    {%- liquid
+      if section.settings.menu != blank
+        if section.settings.menu_type_desktop == 'dropdown'
+          render 'header-dropdown-menu'
+        elsif section.settings.menu_type_desktop != 'drawer'
+          render 'header-mega-menu'
+        endif
+      endif
+    %}
 
     {%- if section.settings.logo_position == 'middle-center' -%}
       {%- if request.page_type == 'index' -%}
@@ -503,11 +517,6 @@
   "class": "section-header",
   "max_blocks": 3,
   "settings": [
-    {
-      "type": "image_picker",
-      "id": "image-logo",
-      "label": "Image logo"
-    },
     {
       "type": "select",
       "id": "logo_position",
