@@ -2203,10 +2203,11 @@ product-info .loading-overlay:not(.hidden) ~ *,
 }
 
 .announcement-bar__message {
-  text-align: center;
+  text-align: left;
   padding: 1rem 0;
   margin: 0;
   letter-spacing: 0.1rem;
+  width: var(--page-width)
 }
 
 /* section-header */
@@ -3321,5 +3322,24 @@ details-disclosure > details {
   :root {
     --easter-egg: none;
     --sparkle: url('./sparkle.gif');
+  }
+}
+@media screen and (min-width: 990px) {
+  .header__search summary {
+    border: 2px solid;
+    border-radius: var(--inputs-radius);
+    width: 250px;
+    padding: 1rem;
+    text-decoration: none;
+  }
+
+  .header__icon span:after {
+    content: "Search...";
+    padding-left: 1rem;
+    color: rgb(var(--color-foreground));
+  }
+
+  .header__icon span {
+    justify-content: flex-start;
   }
 }
