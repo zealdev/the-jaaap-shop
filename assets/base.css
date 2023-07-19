@@ -2256,9 +2256,8 @@ product-info .loading-overlay:not(.hidden) ~ *,
 }
 
 .header {
-  display: grid;
-  grid-template-areas: 'left-icons heading icons';
-  grid-template-columns: 1fr 2fr 1fr;
+  display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -3335,4 +3334,11 @@ details-disclosure > details {
   border-style: solid;
   border-width: 2px;
   border-color: black;
+}
+.testheader {
+  display: flex;
+  flex-direction: column;
+}
+.baba {
+background-color: aquamarine;
 }
