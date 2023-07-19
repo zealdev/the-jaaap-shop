@@ -3339,6 +3339,8 @@ details-disclosure > details {
   display: flex;
   flex-direction: column;
 }
-.baba {
-background-color: aquamarine;
+
+.gaga {
+  display: flex;
+  flex-direction: row;
 }
