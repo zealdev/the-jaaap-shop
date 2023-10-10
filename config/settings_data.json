@@ -149,6 +149,12 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "13549935337288218858": {
+        "type": "shopify:\/\/apps\/labeler-product-labels\/blocks\/app-embed\/38a5b8ec-f58a-4fa4-8faa-69ddd0f10a60",
+        "disabled": false,
+        "settings": {
+        }
       }
     },
     "color_schemes": {
