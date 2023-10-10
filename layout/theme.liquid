@@ -264,7 +264,10 @@
   <!--Gem_Page_Header_Script-->
 {% render 'gem-app-header-scripts' %}
 <!--End_Gem_Page_Header_Script-->
-</head>
+
+                      {% include 'bss-product-labels-configs' %}
+                        </head>
+                 
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
@@ -326,5 +329,5 @@
 <!--End_Gem_Page_Footer_Script-->
 
 	 {% include 'shine-trust.liquid' %} 
-	 </body>
+	 {% if content_for_header contains 'product_label' %}{% include 'bss-product-label-js' %}{% include 'bss-label-style-css' %}{% include 'bss-product-label-fonts' %}{% endif %}</body>
 </html>
