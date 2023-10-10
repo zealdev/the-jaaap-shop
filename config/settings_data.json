@@ -116,6 +116,10 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
+    "scm_pl_pisregex": ".card .full-unstyled-link",
+    "scm_pl_piregex": ".product__media img",
+    "scm_pl_lppath": ".product__modal-opener .product__media",
+    "scm_pl_lpspath": ".card .card__inner",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
