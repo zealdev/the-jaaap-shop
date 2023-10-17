@@ -2,14 +2,12 @@
                             {{ 'bss-product-label-js.js' | asset_url | script_tag }}
                             {{ 'bss-product-label-banner.js' | asset_url | script_tag }}
                             {{ 'bss-product-label-popup.js' | asset_url | script_tag }}
-                            {%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
-                            {%- assign pageUrl = contentForQuerystring | split:'"pageurl":"' | last | split:'"' | first | split:'.myshopify.com' | last |
-                                replace:'/','/' |
-                                replace:'%20',' ' |
-                                replace:'&','&'
-                            -%}
-                            {%- assign pageQuerystring = pageUrl | split:'?' | last -%}
-                            {%- if pageQuerystring contains "bss-pl-custom-selector" -%}
-                                {{'bss-product-label-custom-position.js' | asset_url | script_tag}}
-                            {%- endif -%}
+                            <script>
+                            if (window.location.search.includes("bss-pl-custom-selector")) {
+                                const src = "{{ 'bss-product-label-custom-position.js' | asset_url }}";
+                                const scriptTag = document.createElement("script");
+                                scriptTag.src = src
+                                document.body.appendChild(scriptTag)
+                            }
+                            </script>
                         
