@@ -2809,6 +2809,7 @@ details-disclosure > details {
 }
 
 .badge {
+  Visability: hidden;
   border: 1px solid transparent;
   border-radius: var(--badge-corner-radius);
   display: inline-block;
