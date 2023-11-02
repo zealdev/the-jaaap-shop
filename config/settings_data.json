@@ -94,7 +94,7 @@
     "drawer_shadow_blur": 5,
     "badge_position": "bottom left",
     "badge_corner_radius": 40,
-    "sale_badge_color_scheme": "accent-2",
+    "sale_badge_color_scheme": "inverse",
     "sold_out_badge_color_scheme": "inverse",
     "brand_headline": "",
     "brand_description": "<p><\/p>",
@@ -146,12 +146,6 @@
       },
       "3043103654335303468": {
         "type": "shopify:\/\/apps\/product-labels-badges-shine\/blocks\/shine-trust-embed\/02c12337-3f93-45f7-a60d-aabc0cb2c5dd",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "13549935337288218858": {
-        "type": "shopify:\/\/apps\/labeler-product-labels\/blocks\/app-embed\/38a5b8ec-f58a-4fa4-8faa-69ddd0f10a60",
         "disabled": false,
         "settings": {
         }
