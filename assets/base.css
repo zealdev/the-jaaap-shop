@@ -2818,9 +2818,9 @@ details-disclosure > details {
   line-height: 1;
   padding: 0.5rem 1.3rem 0.6rem 1.3rem;
   text-align: center;
-  background-color: rgb(var(#4E626F));
+  background-color: #4E626F
   border-color: rgba(var(--color-badge-border), var(--alpha-badge-border));
-  color: rgb(var(#4E626F));
+  color: rgb(var(--color-badge-foreground));
   word-break: break-word;
 }
 
