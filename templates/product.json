@@ -93,6 +93,7 @@
       "blocks": {
         "9836ef96-1a85-43f6-aad4-d3dcb674c231": {
           "type": "shopify:\/\/apps\/yotpo-product-reviews-ugc\/blocks\/reviews\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "disabled": true,
           "settings": {
             "product": "{{product}}"
           }
@@ -128,6 +129,7 @@
       "blocks": {
         "okendo_reviews_widget_a7fEXi": {
           "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "disabled": true,
           "settings": {
             "product": "{{product}}",
             "widget_type": "reviews_widget"
@@ -140,12 +142,43 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "17109509099dd2f80c": {
+      "type": "apps",
+      "blocks": {
+        "product_review_myappgurus_form_9Yibfi": {
+          "type": "shopify:\/\/apps\/product-review-myappgurus\/blocks\/form\/0cf5caa0-e138-46b8-999b-520d16633e4c",
+          "settings": {
+            "block_heading": "",
+            "rating": "",
+            "no_rating": "",
+            "subtitle1": "",
+            "subtitle2": "",
+            "review_btn": "",
+            "form_heading": "",
+            "name_label": "",
+            "email_label": "",
+            "review_title_label": "",
+            "review_description_label": "",
+            "ratings_label": "",
+            "review_image_label": "",
+            "submit_btn_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_review_myappgurus_form_9Yibfi"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
     "bd4f8d41d45496627411",
     "related-products",
-    "17102437370eff1c5d"
+    "17102437370eff1c5d",
+    "17109509099dd2f80c"
   ]
 }
