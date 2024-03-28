@@ -20,8 +20,14 @@
           "settings": {
           }
         },
+        "product_review_myappgurus_star_8FUcDe": {
+          "type": "shopify:\/\/apps\/product-review-myappgurus\/blocks\/star\/0cf5caa0-e138-46b8-999b-520d16633e4c",
+          "settings": {
+          }
+        },
         "0bf67617-6e9b-499f-a317-ff4f47ab7afd": {
           "type": "shopify:\/\/apps\/yotpo-product-reviews-ugc\/blocks\/star-rating\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "disabled": true,
           "settings": {
             "product": "{{product}}"
           }
@@ -54,24 +60,19 @@
           "settings": {
             "share_label": "Share"
           }
-        },
-        "product_review_myappgurus_star_8FUcDe": {
-          "type": "shopify:\/\/apps\/product-review-myappgurus\/blocks\/star\/0cf5caa0-e138-46b8-999b-520d16633e4c",
-          "settings": {
-          }
         }
       },
       "block_order": [
         "vendor",
         "title",
         "price",
+        "product_review_myappgurus_star_8FUcDe",
         "0bf67617-6e9b-499f-a317-ff4f47ab7afd",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share",
-        "product_review_myappgurus_star_8FUcDe"
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,
